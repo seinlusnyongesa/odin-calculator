@@ -3,5 +3,53 @@ body {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  background-color: black;
+}
+
+.container {
+  margin: 1em auto;
+  width: 350px;
+  height: 600px;
+  background-color: #a5a3a3;
+  border-radius: 1em;
+  border: 2px solid black;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.screen {
+  width: 20rem;
+  height: 8em;
+  background: #f5f5ec;
+  border-radius: 0.5em;
+  border: 2px solid black;
+  margin-top: 2em;
+}
+
+.clearDelete {
+  width: 20rem;
+  height: 4em;
+  margin-top: 2em;
+  display: flex;
+  justify-content: space-between;
+}
+
+.btns {
+  margin-top: 2rem;
+  width: 20rem;
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  gap: 0.5em;
+}
+
+.btn {
+  display: flex;
+  height: 4rem;
+  justify-content: center;
+  align-items: center;
+  flex: 1 1 4rem;
+  background-color: #7b8560;
+  border-radius: 0.5em;
+  border: 2px solid black;
+  cursor: pointer;
 }
