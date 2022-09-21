@@ -27,6 +27,9 @@ function handleApendPoint() {
     return;
   }
   if (checkIfPointExist(calCurrent.textContent)) {
+    if (calCurrent.textContent.match(/^\d+.\d[÷+%−x]\d+$/)) {
+      calCurrent.textContent += ".";
+    }
     return;
   }
   calCurrent.textContent += ".";
