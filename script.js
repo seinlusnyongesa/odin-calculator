@@ -107,8 +107,8 @@ function checkForOperator(word) {
 }
 
 function operate(num1, op, num2) {
-  num1 = parseFloat(num1);
-  num2 = parseFloat(num2);
+  num1 = Number(num1);
+  num2 = Number(num2);
   switch (op) {
     case "+":
       return add(num1, num2);
